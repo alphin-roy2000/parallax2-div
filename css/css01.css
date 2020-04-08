@@ -1,0 +1,106 @@
+body{
+  margin:0;
+  height: 100vh;
+  background: #191919;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-size: cover;
+}
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 2em;
+  height: 100vh;
+  color: white;
+}
+.logo{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.container:first-child{
+  display: grid;
+  grid-template-rows:10% 30% auto;
+}
+.container h1{
+  text-align: center;
+  margin-top: 2em;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: .9em;
+
+}
+p{
+  line-height: 1.5em;
+  color: rgb(194,194,194);
+}
+.line{
+  align-self: end;
+  width: 50%;
+  border-right: 1px solid white;
+  height: 50%;
+  margin-bottom: 4em;
+  position: relative;
+
+  }
+  &::after{
+    content:' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0 11px;
+    border-color: white transparent transparent transparent;
+    right: -.7em;
+    bottom: -2px;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+
+  .mountains,.forest,.moon,.bg,.forest,.balloon{
+    position: absolute;
+   z-index: -1;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+  }
+  .mountains{
+   height: 100vh;
+   background-image: url(../images/mountain.png);
+   top: -10%;
+ }
+  .bg{
+    background-image: url(../images/bg.jpg);
+    height:100vh;
+    top: 0;
+  }
+  .moon{
+    background-image: url(../images/moon.png);
+    top: 10%;
+    width: 5%;
+    height: 100vh;
+    left: 80%;
+  }
+  .balloon{
+    width: 100px;
+    top: 50%;
+    left: 10%;
+  }
+  .forest{
+    background-image: url(../images/pine-.png);
+    height: 100%;
+    top: 50%;
+  }

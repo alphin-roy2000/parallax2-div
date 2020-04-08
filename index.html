@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/css01.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="logo">Cam-con</a>
+      <nav>
+        <img src="images/menu.png" alt="Menu">
+      </nav>
+
+    </header>
+    <h1 class="lax" data-lax-opacity="0 1,100 0" data-lax-translate-y="0 0, 400 -400">Capture your Dream</h1>
+    <div class="line lax" data-lax-opacity="0 1,100 0" >
+    </div>
+    </div>
+    <section class="parallax">
+
+
+      <div class="bg lax" data-lax-translate-y="0 1,1080 -100"></div>
+
+      <div class="mountains lax" data-lax-translate-y="0 1,1080 -260"></div>
+      <img src="images/hb.png" class="balloon lax" data-lax-translate-x="0 1,1920 1500" data-lax-translate-y="0 1,1080 -400">
+      <div class="forest lax" data-lax-translate-y="0 1,1080 -600"></div>
+
+</section>
+<section>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+
+
+<script src="js/lax.min.js" ></script>
+<script>window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+
+</script>
+
+</body>
+</html>
